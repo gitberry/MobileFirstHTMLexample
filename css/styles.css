@@ -1,0 +1,207 @@
+
+.footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: black;
+    color: lightgreen;
+    padding: 10px;
+    text-align: center;
+    font-size: 9px
+}
+
+h1 { margin: 0px;}
+body { margin: 0px;}
+
+.header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: black;
+    color: lightgreen;
+    padding: 0px;
+    padding-top: 2px;
+    text-align: center;
+    padding-bottom: 2px;
+    width: 100vw;    
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.baudy {
+    width: 350px;
+    margin: auto;
+    border: black;
+    padding: 1px;
+    text-align: left;
+}
+
+.main-graphic {
+    /*width: 100%; */
+    background-color: white;
+}
+
+.download-button {
+    position: relative;
+    left: -90px;
+    border: 1px solid blue;
+    background-color: #CCCCFF;
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+.enterp-button {
+    text-decoration: none !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: rgb(214, 252, 214);
+    background-color: darkgreen;
+    border-radius: 5px;
+    padding: 6px;
+    width: 345px;
+    text-align: center;
+}
+
+.nav-footer {
+    text-align: center;
+    background-color: aquamarine;
+    color: navy;
+    width: 100%;
+    height: 30px;
+}
+
+.nav-button {
+    color: pink;
+    border-color: darkgreen;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    /* padding: 4px; */
+    margin-inline: 17px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: -webkit-baseline-middle;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.nav-back {
+    color: grey;
+    background-color: greenyellow;
+}
+
+.nav-forward {
+    color: green;
+    background-color: greenyellow;
+}
+
+.nav-home {
+    background-color: lightgrey;
+    color: green;
+    width: 1px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.illustration44 {
+    width: 44%;
+}
+.illustration100 {
+    width: 95%;
+}
+
+.ref-enterp-button {
+    text-decoration: none !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.p-enterp-button {
+    /* vertical-align: bottom;
+    background-color: aqua;
+    color: rgb(214, 252, 214); */
+    background-color: darkgreen; 
+    border-radius: 5px;
+    padding: 6px;
+    /* width: 85vw; */
+    /* line-height: 10vw; */
+    height: 44px;
+    /* display: inline-flex; */
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+
+    .body { width:100vw;}
+
+    div.baudy {
+        width: 87vw;
+        margin: auto;
+        border: black;
+        padding: 0px;
+        text-align: left;
+        /* padding-left: 12px; */
+    }
+
+    /* .header {
+        width: 100%;
+    } */
+
+    .footer {
+        width: 91vw;
+    }
+
+    
+
+    .main-graphic {
+        width: 95vw;
+    }
+
+    .download-button {
+        /*position: absolute;
+        left: 280px; */
+        border: 1px solid blue;
+        background-color: #CCCCFF;
+        display: inline-flex;
+        align-items: flex-start;
+        padding: 5px;
+        border-radius: 10px;
+        font-family: monospace;
+    }
+
+    .illustration44 {
+        width: 44vw;
+    }
+    .illustration100 {
+        width: 95vw;
+    }
+
+}
