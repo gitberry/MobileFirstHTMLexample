@@ -18,20 +18,7 @@ UrlValue = UrlOrGivenParam()
 
 Set cnn = Server.CreateObject("ADODB.Connection") 
 
-'DEBUG ErrorHandling
-' Turn off error Handling
-'On Error Resume Next
 cnn.Open ConnectKristiLog() 
-'DEBUG: Code here that you want to catch errors from Error Handler
-'If Err.Number <> 0 Then
-'   Response.Write("hmm")
-'   Response.Write("Error:[" & Err.Number & "]")
-'   Response.Write("Description:[" & Err.Description & "]")
-'   ' Error Occurred - Trap it
-'   On Error Goto 0 ' Turn error handling back on for errors in your handling block
-'   ' Code to cope with the error here
-'End If
-'On Error Goto 0 ' Reset error handling.
 
 'Open a recordset using the Open method and use the connection established by the Connection object. 
 strSQL = "INSERT INTO [dbo].[LogKristi] ([IP] ,[URL] ,[HitDateTime] ,[CookieID]) SELECT '" & GetIP() & "', '" & UrlValue & "',GETUTCDATE(),'" & CookieValue & "'" 
@@ -60,7 +47,7 @@ Function UrlOrGivenParam
   UrlOrGivenParam = resultValue
 End Function
 
-'very crude - better ways to do likey
+'1-minute bare-minimum of input sanitizing - improve this
 Function SanitizeSQL(givenText)
 result = ""
 'only allow alphas numbers and slash
