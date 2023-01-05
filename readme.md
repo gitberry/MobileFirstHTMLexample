@@ -13,6 +13,7 @@ Example
 The real-world example of it is here:
 <https://northberry.ca/kristi> A nice little Nature Trail I regularly frequent.
 
-* exception
+
+(*) exception
 -----------
 I have a link to allow minimal statistics 
